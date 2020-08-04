@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+
+</head>
+<body style="background-image: url('images/bg2.jpeg');">
+
+
+<div class="container">
+  <div class="w3-panel w3-blue w3-center w3-round">
+    <h1 class="w3-opacity" font-weight: bold; style="opacity: 1;" >FEEDBACK</h1> </div>
+   
+ <form action="feedback.php" method="post" class="agile_form">
+    <div class="row">
+      <div class="col-25 w3-center">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75 w3-center" style="width:50%">
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25 w3-center">
+        <label for="rno">Roll Number</label>
+      </div>
+      <div class="col-75 w3-center" style="width:50%">
+        <input type="text" id="lname" name="lastname" placeholder="Your roll number...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25 w3-center">
+        <label for="sem">Semester</label>
+      </div>
+      <div class="col-75 w3-center" style="width:50%">
+        <select id="sem" name="sem">
+          <option value="sem1">Semester I</option>
+          <option value="sem3">Semester III</option>
+          <option value="sem5">Semester V</option>
+        </select>
+      </div>
+    </div>
+ 
+  <h2 class="w3-center w3-red">Feedback Grading Scale</h2>
+     <div class="row">
+      <div class="column w3-center">
+       <ul>
+  <li><=0 and <=5 : Un-Satisfactory</li>
+  <li>>6 and <=7 : Satisfactory</li>
+  <li>>8 and <=9 : Good</li>
+         </ul> </div>
+         <div class="column w3-center">
+     <ul>
+  <li>>5 and <=6 : Cause of Concern</li>
+  <li>>7 and <=8 : Good</li>
+  <li>>9 and <=10 : Excellent</li>
+       </ul> </div>
+    </div>
+
+    <h2 class="w3-red w3-center">Questions To Grade For Each Subject</h2>
+              <div style="padding: 5px;">
+              <h5 > Q1. Compotent, knowledgeable in the subject ?</h5>
+              <h5 > Q2. Comes well prepared to the class. Lectures are well organised. Coverage of Syllabus, Quality of handouts ?</h5>
+              <h5 > Q3. Teaching style is good and clear, Explainations are given, Ability to clear doubts. Communication Skills ?</h5>
+              <h5 > Q4. Encourage students to express their ideas, dialogues and questions in classroom ?</h5>
+              <h5 > Q5. Assignments are well planned, relevent and integrated with teaching ?</h5>
+              <h5 > Q6. Very fair and objective in assesment. Evaluation of class tests and Discussions ?</h5>
+              <h5 > Q7. Enthusiastic about teaching the subjects ?</h5>
+              <h5 > Q8. Accessible to students for individual or group discussion outside the class hours, Personal intrests ?</h5>
+              <h5 > Q9. Is a good Role Model, Punctualty, Regularty and Real Life Application ?</h5>
+              <h5 > Q10. Has Leadership Qualities, Class Control ?</h5>
+              </div>
+              
+
+              <div class="w3-container w3-center w3-red">
+                 <h2>Subject 1</h2>
+  
+              </div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q1</label>
+    <br>
+    <input type="text" id="fname" name="q1" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q2</label>
+    <br>
+    <input type="text" id="fname" name="q2" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q3</label>
+    <br>
+    <input type="text" id="fname" name="q3" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q4</label>
+    <br>
+    <input type="text" id="fname" name="q4" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q5</label>
+    <br>
+    <input type="text" id="fname" name="q5" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q6</label>
+    <br>
+    <input type="text" id="fname" name="q6" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q7</label>
+    <br>
+    <input type="text" id="fname" name="q7" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q8</label>
+    <br>
+    <input type="text" id="fname" name="q8" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q9</label>
+    <br>
+    <input type="text" id="fname" name="q9" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q10</label>
+    <br>
+    <input type="text" id="fname" name="q10" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-container w3-center w3-red">
+                 <h2>Subject 2</h2>
+  
+              </div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q1</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q2</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q3</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q4</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q5</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q6</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q7</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q8</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-half w3-center">
+    <label>Q9</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+  <div class="w3-half w3-center">
+    <label>Q10</label>
+    <br>
+    <input type="text" id="fname" name="fname" size="5"><br><br>
+  </div>
+</div>
+
+    
+    <div class="w3-center">
+      <input type="submit" value="Submit Feedback">
+    </div>
+  </form>
+</div>
+ 
+<div class="agileits_copyright text-center w3-center" >
+      <p>JungliSher © 2020 </p>
+  </div>
+</body>
+</html>
