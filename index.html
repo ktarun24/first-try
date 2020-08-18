@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index_css.css">
+    <script src="https://kit.fontawesome.com/e557324b23.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Whole-body -->
+    <div class="body">
+        <!-- Side navigation bar -->
+        <div class="side-bar">
+            <div style="height: 20%;">
+                <div class="expand-icon">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            </div>
+            <div class="list-section">
+                <a href="#introduction" class="row">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Introduction</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#theory" class="row">
+                    <i class="fas fa-edit"></i>
+                    <h3>Theory</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#objective" class="row">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Objective</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#manual" class="row">
+                    <i class="fas fa-clipboard"></i>
+                    <h3>Manual</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#procedure" class="row">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Procedure</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#further-reading" class="row">
+                    <i class="fas fa-book"></i>
+                    <h3>Further Reading</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#language-used" class="row">
+                    <i class="fas fa-language"></i>
+                    <h3>Language Used</h3>
+                </a>
+            </div>
+            <div class="list-section">
+                <a href="#prerequisite" class="row">
+                    <i class="fas fa-toolbox"></i>
+                    <h3>Prerequisite</h3>
+                </a>
+            </div>
+        </div>
+        <!-- Side navigation-bar end -->
+
+        <!-- Main body -->
+        <div class="main-container">
+            <!-- Top nav bar -->
+            <div class="top-nav-bar">
+                <h1 class="main-ques">
+                  Sum Of Array Elements
+                </h1>
+                <a href="index.html"><i class="fas fa-home home-icon"></i></a>
+            </div>
+            <!-- Top nav bar ends -->
+            <div id="nav-bar">
+                <ul class="nav">
+                    <li class="listItem"><a href="index.html">Lab Content</a></li>
+                    <li class="listItem"><a href="simulation.html">Simulation</a></li>
+                    <li class="listItem"><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="introduction" class="topic">
+                    <div class="heading">
+                        <h2>INTRODUCTION</h2>
+                    </div>
+                    <div class="details">
+                        <p>An array is a collection of similar types of data. It is a container that holds data (values) of one single type. we will detail in on all the ways to find the sum of all array elements in C programming.</p>
+                    </div>
+                </div>
+                <div id="theory" class="topic">
+                    <div class="heading">
+                        <h2>THEORY</h2>
+                    </div>
+                    <div class="details">
+                        <p>
+                            <h3>Adding Array Elements</h3>
+                        </p>
+                        <br>
+                        <p>
+                           Finding sum of array elements is easy when you know how to iterate through array elements. In this post we will explain two approaches to find sum of array elements. First let us begin with the easiest approach.
+                           
+                            <br><br>
+                            <h4>Step:1 initialize n,arr,i and sum</h4>
+                            <p>int n;
+                            <p>int arr[100],i,sum=0;</p> <br>
+                            <h4>Step:2 Read the array size and store it in the variable n.</h4><br>
+                            <p> printf("Input the number of elements to be stored in the array :");<br> scanf("%d",&n);</p>
+                            <h4>Step:3 Input elements in n.</h4> <br>
+                            <p>   printf("Input %d elements in the array :\n",n);<br>  printf("Input %d elements in the array :\n",n);  printf("element - %d : ",i);<br>scanf("%d",&a[i]); </p> <br>
+       
+                            <h4>Step:4 add each element of the array to the sum value using for loop with the structure 
+                            </h4> <br>
+                            <p>  for(i=0; i<n; i++) <br> sum += a[i];</p><br>
+                            <h4>step:-5 print the added elements</h4><br>
+                            <p> printf("sum of array is : %d",sum);</p>
+
+                            <h5>Now the elements are added.</h5>
+
+                            <br> 
+                    </div>
+                </div>
+
+
+
+                <div id="objective" class="topic">
+                    <div class="heading">
+                        <h2>OBJECTIVE</h2>
+                    </div>
+                    <div class="details">
+                        <p>To learn how to takes elements from array and finds the sum of these elements.</p>
+                    </div>
+                </div>
+                <div id="manual" class="topic">
+                    <div class="heading">
+                        <h2>MANUAL</h2>
+                    </div>
+                    <div class="details">
+                        <p>In this experiment you will learn how to write a C/C++ program of takes elements from array and finds the sum of these elements.</p>
+                    </div>
+                </div>
+                <div id="procedure" class="topic">
+                    <div class="heading">
+                        <h2>PROCEDURE</h2>
+                    </div>
+                    <div class="details">
+
+
+
+<p>#include <stdio.h> </p>
+
+<p>void main() </p>
+<p>{ </p>
+   <p> int a[100]; </p>
+    <p>int i, n, sum=0; </p>
+    
+    
+       <p>printf("\n\nFind sum of all elements of array:\n"); </p>
+       <p>printf("--------------------------------------\n");   </p>
+
+       <p>printf("Input the number of elements to be stored in the array :"); </p>
+       <p>scanf("%d",&n); </p>
+   
+       <p>printf("Input %d elements in the array :\n",n); </p>
+      
+        <p>{ </p>
+         <p> printf("element - %d : ",i); </p>
+        <p>  scanf("%d",&a[i]); </p>
+       <p> } </p>
+
+   <p> for(i=0; i<n; i++) </p>
+   <p> {
+      <p>  sum += a[i]; </p>
+   <p> } </p>
+
+    <p>printf("Sum of all elements stored in the array is : %d\n\n", sum); </p>
+<p>}</p>
+
+
+                          <ol>
+                            <li class="list"> Include header files.</li>
+                            <li class="list"> Create main function.</li>
+                            <li class="list">// Inside main function : </li>
+                            <li class="list"> Initialize 3 variables : num1, num2, temp=0 .</li>
+                            <li class="list"> Take input in variables : num1 and num2 .</li>
+                            <li class="list"> Set the value of temp = num1 .</li>
+                            <li class="list"> Set the value of num1 = num2 .</li>
+                            <li class="list"> Set the value of num2 = temp .</li>
+                            <li class="list"> Print the value of variables : num1 and num3 .</li>
+                          </ol>
+
+                    </div>
+                </div>
+                <div id="further-reading" class="topic">
+                    <div class="heading">
+                        <h2>FURTHER READING</h2>
+                    </div>
+                    <div class="details">
+                        <p><a href="https://www.w3resource.com/c-programming-exercises/array/c-array-exercise-3.php" target="_blank" style="font-weight: 600;color: rgb(70, 70, 248);">1.https://www.w3resource.com/c-programming-exercises/array/c-array-exercise-3.php</a></p><br><br>
+
+                         <p><a href="https://codeforwin.org/2015/07/c-program-to-find-sum-of-all-elements-of-array.html" target="_blank" style="font-weight: 600;color: rgb(70, 70, 248);">2.https://codeforwin.org/2015/07/c-program-to-find-sum-of-all-elements-of-array.html</a></p>
+                    </div>
+                </div>
+                <div id="language-used" class="topic">
+                    <div class="heading">
+                        <h2>LANGUAGE USED</h2>
+                    </div>
+                    <div class="details">
+                        <p>1. C</p> <br>
+                        <p>2. C++</p>
+                    </div>
+                </div>
+                <div id="prerequisite" class="topic">
+                    <div class="heading">
+                        <h2>PREREQUISITE</h2>
+                    </div>
+                    <div class="details">
+                        <p> Basic Input Output, For loop, Array . </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main body ends -->
+    </div>
+    <!-- Whole body ends -->
+
+        <!-- jscript costomized -->
+        <script src="index_js.js" charset="utf-8"></script>
+
+    </script>
+</body>
+
+
+</html>

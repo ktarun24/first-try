@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="quiz_css.css">
+    <script src="https://kit.fontawesome.com/e557324b23.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Whole-body -->
+    <div class="body">
+        <!-- Main body -->
+        <div class="main-container-quiz">
+            <!-- Top nav bar -->
+            <div class="top-nav-bar">
+                <h1 class="main-ques">
+                 Sum Of Array Elements
+                </h1>
+                <a href="index.html"><i class="fas fa-home home-icon"></i></a>
+            </div>
+            <!-- Top nav bar ends -->
+            <div id="nav-bar">
+                <ul class="nav">
+                    <li class="listItem"><a href="index.html">Lab Content</a></li>
+                    <li class="listItem"><a href="simulation.html">Simulation</a></li>
+                    <li class="listItem"><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h1 class="h1">Quiz</h1> <br><br>
+                <hr><br><br><br>
+                <form class="form" action="" method="" name="quiz" id="quiz">
+
+
+                    <div id="" class="">
+                        <h4>Q 1 - Predict output of following program. <br><br>
+
+                                                            <p>int main()</p>
+                                                            <p>{</p>
+                                                                <p>int i;</p>
+                                                               <p> int arr[5] = {1};</p>
+                                                                <p>for (i = 0; i < 5; i++)</p>
+                                                                    <p>printf("%d ", arr[i]);</p>
+                                                               <p> return 0;</p>
+                                                            <p>}</p></h4>
+                        <div class="answers">
+                            <label for="a11"><input id="a11"type="radio" name="ques1" value="1 followed by four garbage values">1 followed by four garbage values</label>
+                            <label for="a12"><input id="a12"type="radio" name="ques1" value="1 1 1 1 1">1 1 1 1 1</label>
+                            <label id="a1"><input type="radio" name="ques1" value="1 0 0 0 0">1 0 0 0 0</label>
+                            <label for="a13"><input id="a13"type="radio" name="ques1" value="0 0 0 0 0">0 0 0 0 0</label>
+                        </div>
+                    </div>
+
+                    <div id="" class="">
+                        <h4>Q 2 - Does C perform array out of bound checking? What is the output of the following program? <br><br>
+                                   
+                                <p>int main()</p>
+                                <p>{</p>
+                                    <p>int i;</p>
+                                    <p>int arr[5] = {0};</p>
+                                    <p>for (i = 0; i <= 5; i++)</p>
+                                        <p>printf("%d ", arr[i]);</p>
+                                    <p>return 0;</p>
+                                <p>}</p></h4>
+                        <div class="answers">
+                            <label for="a21"><input id="a21" type="radio" name="ques2" value="Compiler Error: Array index out of bound.">Compiler Error: Array index out of bound.</label>
+                            <label id="a2"><input type="radio" name="ques2" value="The program may print 0 five times followed by garbage value, or may crash if address (arr+5) is invalid.">The program may print 0 five times followed by garbage value, or may crash if address (arr+5) is invalid.</label>
+                            <label for="a22"><input id="a22" type="radio" name="ques2" value="The program always crashes.">The program always crashes.</label>
+                            <label for="a23"><input id="a23" type="radio" name="ques2" value="Non of them">Non of them</label>
+                        </div>
+                    </div>
+
+                    <div id="" class="">
+                        <h4>Q 3 - What does the following declaration mean? <br><br>
+                          
+                                    <p>int (*ptr)[10];</p></h4>
+                        <div class="answers">
+                            <label id="a3"><input type="radio" name="ques3" value="ptr is a pointer to an array of 10 integers">ptr is a pointer to an array of 10 integers</label>
+                            <label for="a31"><input id="a31" type="radio" name="ques3" value="ptr is an array of 10 integers">ptr is an array of 10 integers</label>
+                            <label for="a32"><input id="a32" type="radio" name="ques3" value="ptr is an pointer to array">ptr is an pointer to array</label>
+                            <label for="a33"><input id="a33" type="radio" name="ques3" value="ptr is array of pointers to 10 integers">ptr is array of pointers to 10 integers</label>
+                        </div>
+                    </div>
+
+                    <div id="" class="">
+                        <h4>Q 4 - In C, if you pass an array as an argument to a function, what actually gets passed ?</h4>
+                        <div class="answers">
+                            <label for="a41"><input id="a41" type="radio" name="ques4" value="First element of the array">First element of the array</label>
+                            <label id="a4"><input type="radio" name="ques4" value="Base address of the array">Base address of the array</label>
+                            <label for="a42"><input id="a42" type="radio" name="ques4" value="Value of elements in array">Value of elements in array</label>
+                            <label for="a43"><input id="a43" type="radio" name="ques4" value="Address of the last element of array">Address of the last element of array</label>
+                        </div>
+                    </div>
+
+                    <div id="" class="">
+                        <h4>Q 5 - Predict the output of below program.<br><br>
+
+
+                                    <p> #include <stdio.h> </p>
+                                    <p>int main()  </p>
+                                    <p>{  </p>
+                                       <p> int arr[5];  </p>
+                                        
+                                         <p>// Assume that base address of arr is 2000 and size of integer </p>
+                                           <p>  // is 32 bit  </p>
+                                        <p>arr++;  </p>
+                                       <p> printf("%u", arr);  </p>
+                                        
+                                       <p> return 0; </p>
+                                    <p>}  </p></h4>
+                        <div class="answers">
+                            <label for="a51"><input id="a51" type="radio" name="ques5" value="2020">2020</label>
+                            <label id="a5"><input type="radio" name="ques5" value="lvalue required">lvalue required</label>
+                            <label for="a52"><input id="a52" type="radio" name="ques5" value="2004">2004</label>
+                            <label for="a53"><input id="a53" type="radio" name="ques5" value="Non of above">Non of above</label>
+                        </div>
+                    </div>
+
+
+                    <input type="button" id="after-submit" class="quiz-button" name="" value="Submit Answers" onclick="check()">
+
+                </form>
+
+
+            </div>
+            <div class="restlt" id="">
+                <p id="number-correct">Keep it up !</p>
+
+            </div>
+            <div class="try-div" id="try-btn">
+
+                <a href="quiz.html"><button type="button" class="quiz-button" name="button">Try Again !</button></a>
+            </div>
+
+        </div>
+
+        <!-- Main body ends -->
+    </div>
+    <!-- Whole body ends -->
+
+
+    <!-- jscript costomized -->
+    <script src="quiz_js.js" charset="utf-8"></script>
+</body>
+
+
+</html>
