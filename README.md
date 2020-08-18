@@ -17,7 +17,7 @@ An array is a collection of similar types of data. It is a container that holds 
 
 <h5> Course Alignment : </h5>
 
-C/CPP Programming Lab
+C/C++ Programming Lab
 
 <h5> Universities Mapped : </h5>
 
